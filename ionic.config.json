@@ -1,0 +1,8 @@
+{
+  "name": "embutidos",
+  "app_id": "8075613d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
