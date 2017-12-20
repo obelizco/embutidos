@@ -1,0 +1,28 @@
+page-detalleproducto {
+  .img{
+      border-radius: 100%;
+  }
+
+  ion-card {
+     position: relative;
+     text-align: center;
+   }
+
+  .texto2{
+
+	font: 400 100%/30px arial;
+	direction:ltr;
+  text-align: justify;
+
+}
+
+.card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+}

@@ -1,0 +1,60 @@
+<!--
+  Generated template for the NuevoproductoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Agregar Producto</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+<ion-item>
+  <ion-label floating>Nombre Producto</ion-label>
+  <ion-input type="text"></ion-input>
+</ion-item>
+<br>
+
+<h1 text-muted text-center>Ingredientes</h1>
+
+<ion-list *ngFor="let ingrediente of listaingredientes let i = index">
+<ion-item-sliding>
+    <ion-item>
+      <h2>{{ingrediente.Nombre}}</h2>
+      <p>{{ingrediente.Cantidad}}</p>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="secundary">
+        <ion-icon name="md-settings"></ion-icon>
+        Modificar
+      </button>
+      <button ion-button color="danger">
+        <ion-icon name="md-trash"></ion-icon>
+        Eliminar
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
+
+<ion-buttons>
+  <button ion-button color="azulbotones" (click)="crearIngrediente()" icon-start>
+    <ion-icon name="md-add"></ion-icon>
+     Crear Ingrediente
+  </button>
+
+
+    <button ion-button color="azulbotones" icon-start>
+      <ion-icon name="md-checkmark-circle-outline"> </ion-icon>
+      Crear Receta
+    </button>
+</ion-buttons>
+
+
+
+</ion-content>
