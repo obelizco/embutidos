@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import {RecetaPage} from "../index.paginas";
 /**
  * Generated class for the DetalleproductoPage page.
  *
@@ -15,14 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetalleproductoPage {
 producto:any={};
-Proceso_hamburgesa:any[]=[];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
       this.producto =  this.navParams.get("producto");
-      this.Proceso_hamburgesa = this.producto.proceso;
-
   }
-
+Siguiente(producto:any){
+  this.navCtrl.push(RecetaPage,{producto});
+}
 
 
 

@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-navbar color="primary" text-center class="text">
     <ion-title>{{producto.nombre}}</ion-title>
   </ion-navbar>
 
@@ -18,7 +18,7 @@
 
 <br>
 <h1 text_center> Proceso de Elaboracion </h1>
-<ion-card  *ngFor="let item of Proceso_hamburgesa">
+<ion-card  *ngFor="let item of producto.proceso">
   <img img [src]="item.imga">
       <div class="card-title">{{item.titulo}}</div>
     </ion-card>
@@ -27,7 +27,7 @@
     <button ion-button
             block
             color="azulbotones"
-            (click)="Siguiente()">
+            (click)="Siguiente(producto)">
       Siguiente
     </button>
 </ion-content>

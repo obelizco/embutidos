@@ -1,18 +1,65 @@
-<!--
-  Generated template for the RecetaPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>receta</ion-title>
+  <ion-navbar color="primary" text-center class="text">
+    <ion-title>Calcular Receta</ion-title>
   </ion-navbar>
 
 </ion-header>
+<nav class="navbar fixed-bottom" style="background-color:#F97024;">
+      <ion-label icon-start center text-center class="text">
+        EMBUTIDOS DEL MAR</ion-label>
+    </nav>
+
+<ion-content>
+  <ion-fab top right>
+    <button ion-fab mini (click)="convertir_cantidad()">
+      <ion-icon name="add"></ion-icon></button>
+    </ion-fab>
 
 
-<ion-content padding>
+  <ion-item>
+  <ion-label color="primary" floating>Cant de Materia P.</ion-label>
+  <ion-input type="number" [(ngModel)]="pulpa" required></ion-input>
+</ion-item>
+<ion-item>
+   <ion-label>Unidad de Medida</ion-label>
+   <ion-select [(ngModel)]="unidad_medida" interface="popover">
+     <ion-option value="gramos">Gramos (g)</ion-option>
+     <ion-option value="kilos">Kilos (Kg)</ion-option>
+     <ion-option value="libras">Libras (Lb)</ion-option>
 
+   </ion-select>
+ </ion-item>
+<br>
+<ion-buttons>
+  <button ion-button (click)="calcular(pulpa,unidad_medida)" class="text" block>
+      Calcular
+  </button>
+</ion-buttons>
+
+  <ion-grid *ngIf="mostrar_tabla">
+    <ion-row>
+      <ion-col col-md text-center>
+    <h1 class="text">   Ingredientes </h1>
+      </ion-col>
+      <ion-col text-center>
+      <h1 class="text">  Valor </h1>
+      </ion-col>
+    </ion-row >
+
+
+<ion-row *ngFor="let item of resultado_calculo">
+    <ion-col text-center>
+     {{item.ingrediente }}
+    </ion-col>
+
+    <ion-col text-center>
+  <span>    {{item.valor}} ({{UM_seleccionada}})</span>
+    </ion-col>
+
+
+</ion-row>
+
+  </ion-grid>
 </ion-content>

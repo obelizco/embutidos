@@ -1,0 +1,70 @@
+
+<ion-header>
+
+  <ion-navbar color="primary" text-center class="text">
+    <ion-title>Convertidor de Unidad</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<nav class="navbar fixed-bottom" style="background-color:#F97024;">
+      <ion-label icon-start center text-center class="text">
+        EMBUTIDOS DEL MAR</ion-label>
+    </nav>
+
+<ion-content text-center>
+
+<ion-item>
+  <ion-label color="primary" floating class="text">Valor a Convertir</ion-label>
+  <ion-input type="number"  [(ngModel)]="valor"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label color="primary" floating>Unidad de Medida</ion-label>
+   <ion-select [(ngModel)]="unidad_medida" interface="popover" >
+     <ion-option value="gramos" class="text">Gramos (g)</ion-option>
+     <ion-option value="kilos"  class="text">Kilos (Kg)</ion-option>
+     <ion-option value="libras" class="text">Libras (Lb)</ion-option>
+   </ion-select>
+</ion-item>
+<br>
+
+<ion-grid *ngIf="mostrar_tabla">
+  <ion-row>
+    <ion-col col-md text-center>
+  <h1 class="text">   Valor Ingresado </h1>
+    </ion-col>
+    <ion-col text-center>
+    <h1 class="text">  Valores Convertidos </h1>
+    </ion-col>
+  </ion-row >
+
+
+<ion-row *ngFor="let item of resultado_conversion">
+  <ion-col text-center>
+   {{valor}} ({{unidad_medida}})
+  </ion-col>
+
+  <ion-col text-center>
+      =>
+  </ion-col>
+
+  <ion-col text-center>
+<span>    {{item.valor}} {{item.unidad}}</span>
+  </ion-col>
+
+</ion-row>
+
+</ion-grid>
+
+
+<ion-buttons>
+  <button ion-button (click)="convertir(valor,unidad_medida)" class="text">
+      Convertir
+  </button>
+  <button ion-button (click)="cerrar_modal()" class="text">
+      Atras
+  </button>
+</ion-buttons>
+
+
+</ion-content>

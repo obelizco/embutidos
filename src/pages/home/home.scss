@@ -1,3 +1,26 @@
-page-home {
+.ios, .md{
 
+page-home {
+.text{
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #FFF;
+}
+ion-content{
+
+    background-image: url('../assets/imgs/pez.png');
+    background-position: 100%;
+    background-attachment: fixed;
+  
+
+}
+ ion-item{
+   padding: 10px;
+   background: transparent !important;
+   color: #FFF;
+   font-family: 'Gloria Hallelujah', cursive;
+   -webkit-box-shadow: 15px 7px 16px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 7px 16px -5px rgba(0,0,0,0.75);
+    box-shadow: 15px 7px 16px -5px rgba(0,0,0,0.75);
+}
+}
 }
