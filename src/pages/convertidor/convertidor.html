@@ -8,9 +8,10 @@
 </ion-header>
 <nav class="navbar fixed-bottom" style="background-color:#F97024;">
       <ion-label icon-start center text-center class="text">
-        EMBUTIDOS DEL MAR</ion-label>
-    </nav>
 
+    <img class="icon-fishes" src="../assets/imgs/fish.png"/>  EMBUTIDOS DEL MAR <img class="icon-fishes" src="../assets/imgs/fish.png"/>  </ion-label>
+    </nav>
+<i class="icon-fishes icon-large icon-white"></i>
 <ion-content text-center>
 
 <ion-item>
@@ -58,10 +59,13 @@
 
 
 <ion-buttons>
-  <button ion-button (click)="convertir(valor,unidad_medida)" class="text">
+  <button ion-button (click)="convertir(valor,unidad_medida)" class="text" icon-end>
       Convertir
+      <ion-icon name="md-calculator"></ion-icon>
   </button>
-  <button ion-button (click)="cerrar_modal()" class="text">
+
+  <button ion-button (click)="cerrar_modal()" class="text" icon-start>
+    <ion-icon name="md-arrow-back"></ion-icon>
       Atras
   </button>
 </ion-buttons>

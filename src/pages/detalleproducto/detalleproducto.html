@@ -5,8 +5,14 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content padding text-center>
 
+<nav class="navbar fixed-bottom" style="background-color:#F97024;">
+      <ion-label icon-start center text-center class="text">
+
+    <img class="icon-fishes" src="../assets/imgs/fish.png"/>  EMBUTIDOS DEL MAR <img class="icon-fishes" src="../assets/imgs/fish.png"/>  </ion-label>
+    </nav>
+<ion-content padding text-center>
+  <!-- <ion-scroll scrollY="true"> -->
   <img class="img" [src]="producto.img">
   <h1>
     {{producto.nombre}}
@@ -24,10 +30,18 @@
     </ion-card>
 
 
+
     <button ion-button
             block
             color="azulbotones"
-            (click)="Siguiente(producto)">
-      Siguiente
+            (click)="Siguiente(producto)"
+            icon-right>
+            Siguiente
+            <ion-icon name="md-arrow-round-forward"></ion-icon>
     </button>
+    <br>
+    <br>
+    <br>
+
+  <!-- </ion-scroll> -->
 </ion-content>

@@ -6,7 +6,12 @@ export const PRODUCTOS = [
     proceso:[{titulo:'Materia Prima',imga:'assets/procesos/butifarra/1.jpg'},{titulo:'Pesaje de Ingredientes',imga:'assets/procesos/butifarra/2.jpg'},
             {titulo:'Licuado',imga:'assets/procesos/butifarra/3.jpg'},{titulo:'Mezclado',imga:'assets/procesos/butifarra/4.jpg'},
             {titulo:'Embutido',imga:'assets/procesos/butifarra/5.jpg'},{titulo:'Amarre',imga:'assets/procesos/butifarra/6.jpg'},
-            {titulo:'Cocción',imga:'assets/procesos/butifarra/7.jpg'},{titulo:'Corte',imga:'assets/procesos/butifarra/8.jpg'}]
+            {titulo:'Cocción',imga:'assets/procesos/butifarra/7.jpg'},{titulo:'Corte',imga:'assets/procesos/butifarra/8.jpg'}],
+    calculo:[{ingrediente:'Miga de Pan',porcentaje:5},{ingrediente:'Aceite Vegetal',porcentaje:3},{ingrediente:'Sal',porcentaje:2},
+            {ingrediente:'C.Chorizo Antioqueño',porcentaje:1.5},{ingrediente:'Maggi',porcentaje:0.5},{ingrediente:'Humo Liquido',porcentaje:1},
+            {ingrediente:'Cebolla',porcentaje:2},{ingrediente:'Ajo Fresco',porcentaje:1},{ingrediente:'Cilantro',porcentaje:1},
+            {ingrediente:'Pimienta Picante',porcentaje:0.7},{ingrediente:'Cebolla',porcentaje:3},
+            {ingrediente:'Pimenton',porcentaje:2},{ingrediente:'Agua',porcentaje:4}]
   },
   {
     img:'assets/productos/chorizo.jpg',
@@ -15,8 +20,12 @@ export const PRODUCTOS = [
     proceso:[{titulo:'Materia Prima',imga:'assets/procesos/chorizo/1.jpg'},{titulo:'Pesaje de Ingredientes',imga:'assets/procesos/chorizo/2.jpg'},
             {titulo:'Licuado',imga:'assets/procesos/chorizo/3.jpg'},{titulo:'Mezclado I',imga:'assets/procesos/chorizo/4.jpg'},
             {titulo:'Mezclado II',imga:'assets/procesos/chorizo/5.jpg'},{titulo:'Embutido',imga:'assets/procesos/chorizo/6.jpg'},
-            {titulo:'Cocción',imga:'assets/procesos/chorizo/7.jpg'},{titulo:'Corte y Empaque',imga:'assets/procesos/chorizo/8.jpg'}]
-
+            {titulo:'Cocción',imga:'assets/procesos/chorizo/7.jpg'},{titulo:'Corte y Empaque',imga:'assets/procesos/chorizo/8.jpg'}],
+   calculo:[{ingrediente:'Miga de Pan',porcentaje:5},{ingrediente:'Aceite Vegetal',porcentaje:5},{ingrediente:'Sal',porcentaje:2.5},
+            {ingrediente:'C.Chorizo Ahumado',porcentaje:1.5},{ingrediente:'Color',porcentaje:1},{ingrediente:'Comino',porcentaje:0.5},
+            {ingrediente:'Pimienta',porcentaje:0.5},{ingrediente:'Ajo Fresco',porcentaje:1},{ingrediente:'Cebolla Blanca',porcentaje:3},
+            {ingrediente:'Pimenton',porcentaje:2},{ingrediente:'Agua',porcentaje:5},
+            {ingrediente:'Cilantro',porcentaje:2},{ingrediente:'Cebollin',porcentaje:2}]
   },
   {
     img:'assets/productos/hamburgesa.jpg',
@@ -28,8 +37,8 @@ export const PRODUCTOS = [
             {titulo:'Corte Mecánico',imga:'assets/procesos/hamburguesa/7.jpg'},{titulo:'Corte Manual',imga:'assets/procesos/hamburguesa/8.jpg'},
             {titulo:'Empaque al Vacio',imga:'assets/procesos/hamburguesa/9.jpg'}],
     calculo:[{ingrediente:'Harina de trigo',porcentaje:8},{ingrediente:'Aceite',porcentaje:5},
-            {ingrediente:'C. CH',porcentaje:1},{ingrediente:'Cebolla',porcentaje:3},
-            {ingrediente:'Ajo Fco',porcentaje:1},{ingrediente:'Salsa Negra',porcentaje:1},
+            {ingrediente:'C. Chorizo Ahumado',porcentaje:1},{ingrediente:'Cebolla',porcentaje:3},
+            {ingrediente:'Ajo Fresco',porcentaje:1},{ingrediente:'Salsa Negra',porcentaje:1},
             {ingrediente:'Agua',porcentaje: 4},{ingrediente:'Zanahoria',porcentaje:2},
             {ingrediente:'Cilantro',porcentaje:1}]
   },
@@ -38,12 +47,14 @@ export const PRODUCTOS = [
     nombre: 'Jamon',
     descripcion:'Mezcla de trozos y pasta de músculo de pescado con sales curantes, sometida a  tratamientos de mezclado, moldeo y cocción, para obtener un alimento final en bloque de color rosado, que dentro de la gama de jamones corresponde a la clasificación madurado – cocido',
       proceso:[{titulo:'Materia Prima',imga:'assets/procesos/jamon/1.jpg'},{titulo:'Corte',imga:'assets/procesos/jamon/2.jpg'},
-      {titulo:'Postas',imga:'assets/procesos/jamon/3.jpg'},{titulo:'Limpieza',imga:'assets/procesos/jamon/4.jpg'},
-      {titulo:'Troceado',imga:'assets/procesos/jamon/5.jpg'},{titulo:'Curado',imga:'assets/procesos/jamon/6.jpg'},
-      {titulo:'Mezclado Mecánico',imga:'assets/procesos/jamon/7.jpg'},{titulo:'Mezcla Manual',imga:'assets/procesos/jamon/8.jpg'},
-      {titulo:'Embutido',imga:'assets/procesos/jamon/9.jpg'},{titulo:'Prensado y Cocción',imga:'assets/procesos/jamon/10.jpg'},
-      {titulo:'Presentación en Bloque',imga:'assets/procesos/jamon/11.jpg'},{titulo:'Corte',imga:'assets/procesos/jamon/12.jpg'},
-      {titulo:'Empaque al vacio',imga:'assets/procesos/jamon/13.jpg'}
-    ]
+              {titulo:'Postas',imga:'assets/procesos/jamon/3.jpg'},{titulo:'Limpieza',imga:'assets/procesos/jamon/4.jpg'},
+              {titulo:'Troceado',imga:'assets/procesos/jamon/5.jpg'},{titulo:'Curado',imga:'assets/procesos/jamon/6.jpg'},
+              {titulo:'Mezclado Mecánico',imga:'assets/procesos/jamon/7.jpg'},{titulo:'Mezcla Manual',imga:'assets/procesos/jamon/8.jpg'},
+              {titulo:'Embutido',imga:'assets/procesos/jamon/9.jpg'},{titulo:'Prensado y Cocción',imga:'assets/procesos/jamon/10.jpg'},
+              {titulo:'Presentación en Bloque',imga:'assets/procesos/jamon/11.jpg'},{titulo:'Corte',imga:'assets/procesos/jamon/12.jpg'},
+              {titulo:'Empaque al vacio',imga:'assets/procesos/jamon/13.jpg'}],
+      calculo:[{ingrediente:'Sal',porcentaje:1},{ingrediente:'Nitral O Sales Curantes',porcentaje:0.35},
+              {ingrediente:'Jamon 1A',porcentaje:9.5},{ingrediente:'Extendedor para Jamones',porcentaje:3},
+              {ingrediente:'Humo Liquido',porcentaje:0.6},{ingrediente:'Agua',porcentaje:22}]
   },
 ];
