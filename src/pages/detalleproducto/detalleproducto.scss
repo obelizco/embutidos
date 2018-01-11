@@ -1,7 +1,5 @@
 page-detalleproducto {
-  ion-scroll {
-    height: 100%;
-  }
+
   .img{
       border-radius: 100%;
   }
@@ -10,16 +8,25 @@ page-detalleproducto {
      position: relative;
      text-align: center;
    }
-   .icon-fishes {
-
-     width: 10%;
-     height: 10%;
-   }
+   // .icon-fishes {
+   //
+   //   width: 10%;
+   //   height: 10%;
+   // }
   .texto2{
 
 	font: 400 100%/30px arial;
 	direction:ltr;
   text-align: justify;
+
+}
+
+ion-content{
+
+    background-image: url('../assets/imgs/pez.png');
+    background-position: 100%;
+    background-attachment: fixed;
+
 
 }
 
