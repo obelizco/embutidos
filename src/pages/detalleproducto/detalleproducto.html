@@ -6,22 +6,18 @@
 
 </ion-header>
 
-<nav class="navbar fixed-bottom" style="background-color:#F97024;">
-      <ion-label icon-start center text-center class="text">
-    EMBUTIDOS DEL MAR </ion-label>
-    </nav>
 <ion-content padding text-center>
   <img class="img" [src]="producto.img">
-  <h1>
+  <h1 class="text">
     {{producto.nombre}}
   </h1>
 
-  <p class="texto2">
+  <p class="texto2" >
   {{producto.descripcion}}
 </p>
 
 <br>
-<h1 text_center> Proceso de Elaboracion </h1>
+<h1 text_center class="text"> Proceso de Elaboracion </h1>
 <ion-card  *ngFor="let item of producto.proceso">
   <img img [src]="item.imga">
       <div class="card-title">{{item.titulo}}</div>
@@ -31,9 +27,10 @@
 
     <button ion-button
             block
-            color="azulbotones"
             (click)="Siguiente(producto)"
-            icon-right>
+            icon-right
+            class="text"
+            >
             Siguiente
             <ion-icon name="md-arrow-round-forward"></ion-icon>
     </button>
@@ -41,5 +38,14 @@
     <br>
     <br>
 
-  <!-- </ion-scroll> -->
 </ion-content>
+<ion-footer no-border>
+
+  <ion-navbar  color="primary" text-center class="text">
+    <ion-label>
+       <img class="icon-fishes" src="assets/img/espada.png">
+      EMBUTIDOS DEL MAR   <img class="icon-fishes" src="assets/img/espada.png">
+    </ion-label>
+  </ion-navbar>
+
+</ion-footer>

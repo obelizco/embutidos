@@ -1,14 +1,16 @@
+.ios, .md{
 page-convertidor {
   .text{
     font-family: 'Gloria Hallelujah', cursive;
     color: #FFF;
   }
   ion-content{
-
-      background: url('../assets/imgs/pez.png');
-      background-position: center;
+      background-color: #000;
+      background-image: url('../assets/imgs/pez.jpg');
+      background-position: 80% 50%;
       background-attachment: fixed;
-     background-size: cover;
+      background-repeat: no-repeat
+
   }
 
   ion-item{
@@ -24,9 +26,10 @@ page-convertidor {
    color: #FFF;
     border: 1px solid #eee8d5;
  }
- // .icon-fishes {
- //
- //   width: 10%;
- //   height: 10%;
- // }
+ .icon-fishes {
+   width: 10%;
+   height: 10%;
+
+ }
+}
 }

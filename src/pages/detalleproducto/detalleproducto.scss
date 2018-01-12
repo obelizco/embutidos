@@ -1,3 +1,4 @@
+.ios, .md{
 page-detalleproducto {
 
   .img{
@@ -8,29 +9,29 @@ page-detalleproducto {
      position: relative;
      text-align: center;
    }
-   // .icon-fishes {
-   //
-   //   width: 10%;
-   //   height: 10%;
-   // }
-  .texto2{
+   .icon-fishes {
+     width: 10%;
+     height: 10%;
 
-	font: 400 100%/30px arial;
+   }
+  .texto2{
+	font-family: 'Gloria Hallelujah', cursive;
 	direction:ltr;
   text-align: justify;
-
+  color: #FFF;
 }
 
 ion-content{
-
-    background-image: url('../assets/imgs/pez.png');
-    background-position: 100%;
+    background-color: #000;
+    background-image: url('../assets/imgs/pez.jpg');
+    background-position: 80% 50%;
     background-attachment: fixed;
-
+    background-repeat: no-repeat
 
 }
 
 .card-title {
+  font-family: 'Gloria Hallelujah', cursive;
     position: absolute;
     top: 36%;
     font-size: 2.0em;
@@ -44,4 +45,5 @@ ion-content{
     color: #FFF;
   }
 
+}
 }

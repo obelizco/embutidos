@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController } from 'ionic-angular';
 import {HomePage} from "../index.paginas";
-/**
- * Generated class for the IntroduccionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {AjustesProvider} from "../../providers/ajustes/ajustes";
 
 @IonicPage()
 @Component({
@@ -18,25 +13,26 @@ export class IntroduccionPage {
   slides:any[] = [
     {
       title: "Bienvenido!!!",
-      description: "Esta <b>aplicación</b> nos ayudará a comprender muchos temas interesantes en ionic!",
+      description: "<b>Embutidos del Mar App</b>!",
       image: "assets/img/ica-slidebox-img-1.png",
     },
     {
-      title: "¿Qué es ionic?",
-      description: "<b>Ionic Framework</b> es un SDK abierto que le permite a los desarrolladores crear aplicaciones móviles de alta calidad con el conocimiento de JavaScript, CSS y HTML.",
+      title: "¿Qué es esta APP?",
+      description: "<b>Embutidos del Mar App</b> es una aplicacion que da a conocer los diferentes productos del mar y sus respectivos procesos.",
       image: "assets/img/ica-slidebox-img-2.png",
     },
     {
       title: "¿Que hace esta app?",
-      description: "Esta aplicación nos ayudará a conocer más sobre el ciclo de vida de un componente y el storage!",
+      description: "Esta aplicación nos facilita la preparacion de los embutidos, por medio de calculos en base a sus respectivas recetas.!",
       image: "assets/img/ica-slidebox-img-3.png",
     }
   ];
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private _ajustes:AjustesProvider) {
   }
 
 saltar_tutorial(){
-
+ this._ajustes.ajustes.mostrar_tutorial=false;
+ this._ajustes.guardar_storage();
   this.navCtrl.setRoot(HomePage);
 }
 
