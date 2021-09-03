@@ -1,3 +1,4 @@
+export { NuevoproductoPage } from './nuevoproducto/nuevoproducto';
 export {HomePage} from "./home/home";
 export {ContactoPage} from "./contacto/contacto";
 export {DetalleproductoPage} from "./detalleproducto/detalleproducto";

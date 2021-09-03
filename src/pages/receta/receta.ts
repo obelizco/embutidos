@@ -80,8 +80,16 @@ mostrar_alerta(){
 
 
 calculos(pulpa:number){
-  for (let i = 0; i < this.porcentajes.length; i++) {
+  if(this.producto.nombre=="Antipasto"){
+    console.log("entre al if");
+    for (let i = 0; i < this.porcentajes.length; i++) {
+      this.resultado_calculo.push({ 'ingrediente':this.porcentajes[i].ingrediente , 'valor':(pulpa*this.porcentajes[i].porcentaje)/20 } );
+  }
+  }else{
+    console.log("entre al else");
+    for (let i = 0; i < this.porcentajes.length; i++) {
       this.resultado_calculo.push({ 'ingrediente':this.porcentajes[i].ingrediente , 'valor':(pulpa*this.porcentajes[i].porcentaje)/100 } );
+  }
   }
 }
 

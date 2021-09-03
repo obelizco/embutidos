@@ -1,17 +1,9 @@
 .ios, .md{
 page-receta {
-  ion-content{
-      background-color: #000;
-      background-image: url('../assets/imgs/pez.jpg');
-      background-position: 80% 50%;
-      background-attachment: fixed;
-      background-repeat: no-repeat
-
-  }
   ion-item{
     padding: 10px;
     background: transparent !important;
-    color: #FFF;
+    color: #000000;
     font-family: 'Gloria Hallelujah', cursive;
     -webkit-box-shadow: 15px 7px 16px -5px rgba(0,0,0,0.75);
      -moz-box-shadow: 15px 7px 16px -5px rgba(0,0,0,0.75);
@@ -20,11 +12,11 @@ page-receta {
 
  .text{
    font-family: 'Gloria Hallelujah', cursive;
-   color: #FFF;
+   color: #000000;
  }
  ion-col{
-   color: #FFF;
-    border: 1px solid #eee8d5;
+   color: #000000;
+    border: 1px solid #000000;
  }
 
  .icon-fishes {

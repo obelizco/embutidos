@@ -31,7 +31,7 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:     rgba(#F97024,.9),
+  primary:     #b5985e,
   secondary:  #D3DB32,
   danger:     #f53d3d,
   light:      #F6F2F2,
@@ -43,6 +43,15 @@ $colors: (
 ),
 );
 
+ion-content{
+
+  background: url('../assets/imgs/icon.png') no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size:contain;
+
+}
 
 // App iOS Variables
 // --------------------------------------------------

@@ -15,11 +15,11 @@
 
 
   <ion-item>
-  <ion-label color="primary" floating>Cant de Materia P.</ion-label>
+  <ion-label style="color:#000000; font-weight: 800;" floating>Cant de Materia P.</ion-label>
   <ion-input type="number" [(ngModel)]="pulpa" required></ion-input>
 </ion-item>
 <ion-item>
-   <ion-label color="primary">Unidad de Medida</ion-label>
+   <ion-label style="color:#000000;font-weight: 800;" >Unidad de Medida</ion-label>
    <ion-select [(ngModel)]="unidad_medida" interface="popover">
      <ion-option value="gramos">Gramos (g)</ion-option>
      <ion-option value="kilos">Kilos (Kg)</ion-option>
@@ -29,7 +29,7 @@
  </ion-item>
 <br>
 <ion-buttons>
-  <button ion-button (click)="calcular(pulpa,unidad_medida)" class="text" block icon-end>
+  <button ion-button style="font-weight: 800;" (click)="calcular(pulpa,unidad_medida)" class="text" block icon-end>
       Calcular
       <ion-icon name="md-clipboard"></ion-icon>
   </button>
